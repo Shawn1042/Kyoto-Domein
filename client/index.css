@@ -10,6 +10,7 @@
 
 body{
     background-color: rgb(14, 19, 31);
+    overflow: hidden;
 }
 
 header{
@@ -155,7 +156,7 @@ main{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 20rem;
+    font-size: 14rem;
     opacity: 0;
     color: #302e2e;
     z-index: -1;

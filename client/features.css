@@ -39,7 +39,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 20rem;
-    opacity: 0;
+    opacity: 1;
     color: #3a3636;
     z-index: -1;
     pointer-events: none;
@@ -170,6 +170,18 @@ body {
 }
 /* Mobile devices */
 @media only screen and (max-width: 480px) {
+
+    .watermark {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 14rem;
+    color: #3a3636;
+    z-index: -1;
+    pointer-events: none;
+    animation: fadeInScale 3s forwards;
+}
     .header::before {
         font-size: 6em;
         left: 20%;
@@ -177,9 +189,7 @@ body {
 
     .header::after {
         content: url('/assets/kake-removebg-preview.png'); 
-
-        width: 60px; 
         top: 80%;
-        left: 10%;
+        left: 0;
     }
 }
