@@ -84,7 +84,6 @@ body {
     margin-right: 15px;  
 }
 
-/* For mobile screens, adjust the direction to column so they stack */
 @media (max-width: 768px) {
     .header::before {
         display: none;
