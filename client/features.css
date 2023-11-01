@@ -1,0 +1,186 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    padding: 5px;
+    background-color: #0a0f16; 
+    color: #FFF; 
+}
+.header::before, .header::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    opacity: 0.1; 
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* For the K watermark */
+.header::before {
+    content: url('/assets/kake-removebg-preview.png'); 
+
+    top: 65%;
+    font-size: 15em;
+    right: 25%; /* Adjust as per requirement */
+}
+
+/* For the anime character */
+.header::after {
+    content: url('/assets/placer.png'); 
+    width: 150px; 
+    height: auto;
+    top: 60%;
+    left: 31%; 
+}
+
+
+
+.watermark {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20rem;
+    opacity: 0;
+    color: #3a3636;
+    z-index: -1;
+    pointer-events: none;
+    animation: fadeInScale 3s forwards;
+}
+
+
+@keyframes fadeInScale {
+    to {
+        opacity: 0.1;
+        transform: translate(-50%, -50%) scale(2);
+    }
+}
+
+
+.logo {
+    width: 50px; 
+    height: auto; 
+    margin-right: 15px;
+    float: left;
+}
+
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0a0f16;
+    padding: 15px;
+    text-align: center;
+}
+
+.header-content {
+    display: flex;  
+    align-items: center;  
+    flex-direction: column  
+}
+
+.logo {
+    max-width: 50px;  
+    height: auto;
+    margin-right: 15px;  
+}
+
+/* For mobile screens, adjust the direction to column so they stack */
+@media (max-width: 768px) {
+    .header::before {
+        display: none;
+        content: url(''); 
+    
+        top: 80%;
+        font-size: 15em;
+        left: 10%;
+    }
+    .header-content {
+        flex-direction: column; 
+    }
+
+    .logo {
+        margin-right: 0;  
+        margin-bottom: 10px; 
+    }
+}
+
+
+.header h1 {
+    color: #1BBFAC; 
+    border-bottom: 2px solid #1BBFAC; 
+}
+
+.content {
+    padding: 20px;
+}
+
+.content h2 {
+    color: #1BBFAC; 
+    border-bottom: 1px solid #1BBFAC;
+}
+
+.footer {
+    background-color: #0a0f16; 
+    color: #FFF; 
+    text-align: center;
+    padding: 10px 0;
+}
+
+::-webkit-scrollbar {
+    width: 8px; 
+    height: 8px;  
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #1BBFAC; 
+    border-radius: 4px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #108c89;  
+}
+
+/* Scrollbar Track */
+::-webkit-scrollbar-track {
+    background: #0a0f16; 
+    border-radius: 4px;
+    box-shadow: inset 0 0 5px #333; 
+}
+
+.footer-logo {
+    width: 30px; 
+    height: auto;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+/* Tablet devices */
+@media only screen and (max-width: 768px) {
+    .header::before {
+        font-size: 10em;
+        left: 15%;
+    }
+
+    .header::after {
+        width: 120px; 
+        top: 80%;
+        left: 36%;
+    }
+}
+/* Mobile devices */
+@media only screen and (max-width: 480px) {
+    .header::before {
+        font-size: 6em;
+        left: 20%;
+    }
+
+    .header::after {
+        content: url('/assets/kake-removebg-preview.png'); 
+
+        width: 60px; 
+        top: 80%;
+        left: 10%;
+    }
+}
