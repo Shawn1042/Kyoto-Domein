@@ -37,17 +37,17 @@ body {
 }
 
 h1 {
-    margin-bottom: 30px; /* Adjust spacing between the title and image */
+    margin-bottom: 30px; 
     position: absolute;
-    top: 10%; /* Adjust to position title at the top */
+    top: 10%; 
     padding: 0 10px;
 }
 
 img {
     
-    width: 50%; /* Adjust this if needed */
+    width: 50%; 
     
-    z-index: 1; /* Ensure the image is above the watermark */
+    z-index: 1; 
 }
 
 @keyframes fadeInScale {
