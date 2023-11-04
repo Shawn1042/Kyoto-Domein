@@ -1,3 +1,5 @@
+// https://app.logomakr.com/7gFBWm
+
 // Switch between domain name translations
 (function() {
     const domainName = document.getElementById('domainSwitch');

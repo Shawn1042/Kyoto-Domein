@@ -189,7 +189,7 @@ body {
 
     .header::after {
         content: url('/assets/kake-removebg-preview.png'); 
-        top: 80%;
+        top: 90%;
         left: 0;
     }
 }
