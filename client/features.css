@@ -114,8 +114,10 @@ body {
 }
 
 .content h2 {
+    margin-top: 20px;
     color: #1BBFAC; 
     border-bottom: 1px solid #1BBFAC;
+   
 }
 
 .footer {

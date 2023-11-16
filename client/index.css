@@ -226,20 +226,6 @@ main{
         padding-left: 15px;
     }
 
-    header > .logo > img {
-        height: 40px;
-        width: 40px;
-    }
-
-    header > .logo > p {
-        font-size: 1.2rem;
-    }
-
-    nav {
-        gap: 10px;
-        font-size: 1rem;
-    }
-
     main {
         padding: 15px 20px;
     }
